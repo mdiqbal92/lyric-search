@@ -39,7 +39,7 @@ const displaySong = songs => {
     console.log(songs);
 }
 const getLyric = (artist, title) => {
-    const url = `https://api.lyrics.ovh/v1d/${artist}/${title}`
+    const url = `https://api.lyrics.ovh/v1/${artist}/${title}`
     fetch(url)
         .then(res => res.json())
         .then(data => showLyric(data.lyrics))
